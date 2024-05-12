@@ -1,0 +1,54 @@
+1. Tính trừu tượng
+
+- Lớp Student:
++ Mô tả đối tượng sinh viên với các thuộc tính "name", "age", "gender", "id", "email", "address", "major".
++ Mô tả các hành vi của sinh viên qua phương thức: "__init__", "__str__",...
+
+- Lớp FirstYear, SecondYear, ThirdYear, FourthYear:
++ Cũng tương tự như lớp Student
++ Thêm các thuộc tính theo từng class con: "school", "company",...
+
+2. Tính đóng gói
+
+- Các thuộc tính được đóng gói trong kiểu private (có 2 dấu gạch kép ở đằng trước tên thuộc tính)
+- Điều này ngăn chặn việc truy cập từ ngoài class đến thuộc tính đó
+
+3. Tính kế thừa
+
+- Các lớp FirstYear, SecondYear,... đều là lớp con của 'class' Student
+- Thông qua việc sử dụng hàm 'super().__init__' và 'super().__str__'
+- Kế thừa các thuộc tính và phương thức của lớp cha là 'Student'
+
+4. Tính đa hình
+
+- Override:
+
++ Các lớp con có phương thức ghi đè phương thức '__str__' và 'add_student' của lớp 'Student'
++ Thêm thông tin cụ thể cho từng lớp con
+
+- Overloading: Không có trong chương trình này
+
+6. Getter, Setter:
+
+- Trong class 'Student' có phương thức 'get_id' để truy cập vào thuộc tính 'id' dùng trong việc xoá sinh viên
+
+7. Tuần tự hóa và giải tuần tự đối tượng
+
+- Tuần tự hoá: Dùng để lưu sinh viên vào file json 
+
+- Giải tuần tự: Dùng để đọc dữ liệu sinh viên từ file json
++ Có thể dùng để xoá hoặc hiện thị danh sách sinh viên ra 
+
+8. Không lưu trữ, hoặc lưu trữ dữ liệu trên File, hoặc sử dụng Hệ quản trị cơ sở dữ liệu
+
+9. Liệt kê các thuật toán đã được sử dụng 
+
+- Vòng lặp for
+
+- Câu lệnh điều kiện if - else
+
+- Xử lý ngoại lệ
+
+10. Liệt kê các thư viện đã sử dụng
+
+- Dùng thư viện json để tuần tự hóa và giải tuần tự đối tượng

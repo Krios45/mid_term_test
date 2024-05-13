@@ -115,10 +115,10 @@ class FourthYear(Student):
         self.__company = str(input("Enter company: "))
         self.__project = str(input("Enter project: "))
 
+list_student = []
 class QLSV:
 
     def add_student(self):
-        list_student = []
         n = int(input("Enter number of student: "))
         if not n>0:
             raise ValueError("Number of student must higher than 0!!... (-_-!)")     
